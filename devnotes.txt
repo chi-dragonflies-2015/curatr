@@ -2,7 +2,7 @@ Schema
 
 Tables
   Users: username
-  Images: URL, notes
+  Images: url, notes
   Galleries: title, description, image_id
 
 Associations:
