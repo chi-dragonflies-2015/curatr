@@ -1,0 +1,17 @@
+Schema
+
+Tables
+  Users: username
+  Images: URL, notes
+  Galleries: title, description, image_id
+
+Associations:
+  A user has many images
+  A user has many galleries
+
+  An image belongs to a user
+  An image belongs to a gallery
+
+  A gallery belongs to a user
+  A gallery has many images
+

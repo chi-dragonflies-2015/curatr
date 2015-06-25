@@ -50,6 +50,8 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
 
 ## MVP
 
+[Trello project manager for Curatr](https://trello.com/b/hOvVE8g8/curatr)
+
 ### Sprint 1
 - [ ] Create schema
 - [ ] Create migrations
