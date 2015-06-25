@@ -2,7 +2,7 @@
 Created by Jason Pettus
 as a class assignment for DevBootcamp Chicago
 
-A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flickr photo-sharing service, which allows them to create "virtual art galleries" by adding images found throughout the website, searchable by both member-associated criteria (a member's friends, a member's groups, a member's favorites, etc), and criteria belonging to the website as a whole (the newest images globally, the ones with the highest 'interestingness' score, etc). The resulting galleries, along with that curator's notes on each image, are then available for the general public to view and explore, regardless of whether or not they are Flickr members themselves. (Please note, as a pleasant side effect, Curatr also exists as a better and more intuitive way for members to look through the images associated with their accounts than the built-in functions at the main website, and the app can easily be used just as a sophisticated photo viewer if one wishes.)
+A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flickr photo-sharing service, which allows them to create "virtual art galleries" by adding images found throughout the website, searchable by both member-associated criteria (a member's friends, a member's groups, a member's favorites, etc), and criteria belonging to the website as a whole (the newest images globally, the ones with the highest 'interestingness' score, etc). The resulting galleries, along with that curator's notes on each image, are then available for the general public to view and explore, regardless of whether or not they are Flickr members themselves. (Please note, as a pleasant side effect, Curatr also exists as a better and more intuitive way for members to look through the images associated with their accounts than the built-in functions at the main website, and the app can easily be used just as a sophisticated Flickr interface if one wishes.)
 
 ## User Stories
 
@@ -41,10 +41,21 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
   * Curator
   * Creation date
 - See a stripped-down and minimalist slide show of that particular gallery, featuring only the image itself, its title and artist, and the curator’s notes.
+- Move backwards and forwards in gallery using the arrow keys on my keyboard.
 - Hover over a slide-in menu containing:
-  * Options for manually moving backwards and forwards in gallery
-  * “Playback” controls for optional slide show view (backwards, forwards, pause/play)
-  * Ability to control how long each slide shows
+  * Options for manually moving backwards and forwards in gallery with my mouse
+  * “Playback” controls for optional slide show view (pause/play, set time for each image)
   * Ability to quit and go back to the main menu
 - Click on any image at any time to go to its original Flickr page.
 
+## MVP
+
+### Sprint 1
+- [ ] Create schema
+- [ ] Create migrations
+- [ ] Create models
+- [ ] Incorporate flickraw gem
+- [ ] Incorporate OAuth ability to sign into Flickr
+- [ ] Skeleton HTML and controller routes for testing all
+
+### Sprint 2
