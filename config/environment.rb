@@ -18,6 +18,8 @@ require 'logger'
 require 'sinatra'
 require "sinatra/reloader" if development?
 
+require 'flickraw'
+
 require 'erb'
 
 # Some helper constants for path-centric logic
@@ -43,3 +45,11 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+# Set up FlickRaw
+# grab from yaml file
+my_login = YAML.load_file('secrets.yaml')
+FlickRaw.api_key = my_login['API_KEY']
+FlickRaw.shared_secret = my_login['SHARED_SECRET']
+use Rack::Session::Pool
+

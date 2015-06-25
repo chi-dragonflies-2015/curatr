@@ -53,10 +53,10 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
 [Trello project manager for Curatr](https://trello.com/b/hOvVE8g8/curatr)
 
 ### Sprint 1
-- [ ] Create schema
-- [ ] Create migrations
-- [ ] Create models
-- [ ] Incorporate flickraw gem
+- [X] Create schema
+- [X] Create migrations
+- [X] Create models
+- [X] Incorporate flickraw gem
 - [ ] Incorporate OAuth ability to sign into Flickr
 - [ ] Skeleton HTML and controller routes for testing all
 
