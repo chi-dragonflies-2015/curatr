@@ -1,2 +1,7 @@
-<p>Curatr test index</p>
+<p><b>Curatr</b></p>
+<% if current_user %>
+  <p>Logged in as <%= @user.username %> | <a href="/logout">Log out</a></p>
+<% else %>
+  <p><a href="/login">Log in using your Flickr account</a></p>
+<% end %>
 

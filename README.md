@@ -61,3 +61,12 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
 - [X] Skeleton HTML and controller routes for testing all
 
 ### Sprint 2
+
+- [ ] Make OAuth login either log into a Curatr account or create a new one
+- [ ] Demonstrate ability to pull up a user's photostream
+- [ ] Demonstrate ability to pull up a user's friends list
+- [ ] Demonstrate ability to pull up a user's groups
+- [ ] Demonstrate ability to pull up a user's favorites list
+- [ ] Routes and views for testing all
+
+### Sprint 3
