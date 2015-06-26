@@ -22,4 +22,13 @@ helpers do
     !session[:user_id].nil?
   end
 
+  def create_image_urls(photo_array)
+    @image_array = []
+    photo_array.each do |photo|
+      image = flickr.photos.getInfo :photo_id => photo.id
+      image_url = "https://farm#{image.farm}.staticflickr.com/#{image.server}/#{image.id}_#{image.secret}_n.jpg"
+      @image_array << image_url
+    end
+  end
+
 end
