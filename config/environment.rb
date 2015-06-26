@@ -48,8 +48,8 @@ require APP_ROOT.join('config', 'database')
 
 # Set up FlickRaw
 # grab from yaml file
-my_login = YAML.load_file('secrets.yaml')
-FlickRaw.api_key = my_login['API_KEY']
-FlickRaw.shared_secret = my_login['SHARED_SECRET']
+# my_login = YAML.load_file('secrets.yaml')
+FlickRaw.api_key = ENV['API_KEY']
+FlickRaw.shared_secret = ENV['SHARED_SECRET']
 use Rack::Session::Pool
 
