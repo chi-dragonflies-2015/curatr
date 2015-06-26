@@ -57,7 +57,7 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
 - [X] Create migrations
 - [X] Create models
 - [X] Incorporate flickraw gem
-- [ ] Incorporate OAuth ability to sign into Flickr
-- [ ] Skeleton HTML and controller routes for testing all
+- [X] Incorporate OAuth ability to sign into Flickr
+- [X] Skeleton HTML and controller routes for testing all
 
 ### Sprint 2
