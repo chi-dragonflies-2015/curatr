@@ -14,6 +14,7 @@ gem 'activerecord', '~>4.2.0'
 gem 'rake'
 gem 'flickraw'
 gem 'shotgun'
+gem 'thin'
 
 group :test do
   gem 'shoulda-matchers'
