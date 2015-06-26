@@ -13,12 +13,22 @@ get '/check' do
   @auth_flickr = FlickRaw::Flickr.new
   session[:auth_flickr] = @auth_flickr
   @auth_flickr.get_access_token(token['oauth_token'], token['oauth_token_secret'], params['oauth_verifier'])
-
   @login = @auth_flickr.test.login
-  redirect :'/authenticated'
+  redirect "/authenticated?username=#{@login.username}&id=#{@login.id}"
 end
 
 get '/authenticated' do
-  @login = @auth_flickr.test.login
+  @login = {
+    username: params[:username],
+    id: params[:id]
+  }
+  session[:username] = @login[:username]
+  session[:id] = @login[:id]
+  puts "+++++++++++++++++++++++++++++++"
+  puts "session[:username] is"
+  p session[:username]
+  puts "session[:id] is"
+  p session[:id]
+
   erb :loggedin
 end
