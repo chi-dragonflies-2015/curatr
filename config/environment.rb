@@ -47,9 +47,15 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 # Set up FlickRaw
-# grab from yaml file
+
+# Use these three lines when working on a local copy
 # my_login = YAML.load_file('secrets.yaml')
+# FlickRaw.api_key = my_login['API_KEY']
+# FlickRaw.shared_secret = my_login['SHARED_SECRET']
+
+# Use these two lines when sending to Heroku
 FlickRaw.api_key = ENV['API_KEY']
 FlickRaw.shared_secret = ENV['SHARED_SECRET']
+
 use Rack::Session::Pool
 

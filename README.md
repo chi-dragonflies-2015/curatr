@@ -68,5 +68,6 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
 - [ ] Demonstrate ability to pull up a user's groups
 - [ ] Demonstrate ability to pull up a user's favorites list
 - [ ] Routes and views for testing all
+- [X] Deploy to Heroku
 
 ### Sprint 3
