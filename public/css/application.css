@@ -1,5 +1,6 @@
 img {
   max-width: 80%;
   height: auto;
-  width: auto\9; /* ie8 */
+  width: auto\9;
 }
+

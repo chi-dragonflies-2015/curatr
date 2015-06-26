@@ -63,7 +63,7 @@ A play on the word 'curator,' <b>Curatr</b> is a web app for members of the Flic
 ### Sprint 2
 
 - [X] Make OAuth login either log into a Curatr account or create a new one
-- [ ] Demonstrate ability to pull up a user's photostream
+- [X] Demonstrate ability to pull up a user's photostream
 - [ ] Demonstrate ability to pull up a user's friends list
 - [ ] Demonstrate ability to pull up a user's groups
 - [ ] Demonstrate ability to pull up a user's favorites list
